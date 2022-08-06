@@ -1,0 +1,29 @@
+.droplet-thumbnail-image {
+    /* border-radius: 50%; */
+    transition: all 0.2s ease;
+    /* mask-image: url(circle.svg);
+    clip-path: circle(50%);
+    overflow: hidden; */
+}
+
+.droplet-thumbnail-wrapper {
+    clip-path: circle(50%);
+}
+
+.droplet-thumbnail-image:hover {
+    transform: scale(1.1) rotate(10deg);
+}
+
+.droplet-thumbnail {
+    padding: 16px;
+    background-color: pink;
+    
+
+}
+
+.droplet-thumbnail-sharp-top-left {
+    border-top-left-radius: 0;
+    border-top-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+}

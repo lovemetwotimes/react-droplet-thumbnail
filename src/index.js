@@ -1,17 +1,54 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import DropletThumbnail from './lib/droplet-thumbnail';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+
+
+const images = [
+{
+  src: 'https://picsum.photos/id/1005/200',
+  alt: 'lorem ipsum',
+  start: 'top-left',
+  end: 'bottom-right',
+  id: 1,
+
+},
+{
+  src: 'https://picsum.photos/id/1025/200',
+  alt: 'lorem ipsum', 
+  start: 'top-left',
+  end: 'bottom-right',
+  id: 2,
+},
+{
+  src: 'https://picsum.photos/id/1066/200',
+  alt: 'lorem ipsum',
+  start: 'top-left',
+  end: 'bottom-right',
+  id: 3,
+},
+{
+  src: 'https://picsum.photos/id/1074/200',
+  alt: 'lorem ipsum',
+  start: 'top-left',
+  end: 'bottom-right',
+  id: 4,
+},
+]
+
+
+const root = ReactDOM.createRoot(document.getElementById('demo'));
+
+function DropletsDemos() {
+  return images.map(({src, alt, start, end,id}) => (
+    <DropletThumbnail key={id} src={src} alt={alt} className="droplets-demo" start={start}/>
+  )
+  ) 
+}
+
 root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+  <DropletsDemos/>
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+
