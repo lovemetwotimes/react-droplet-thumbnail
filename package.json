@@ -1,7 +1,7 @@
 {
   "name": "react-droplet-thumbnail",
   "version": "0.1.0",
-  "homepage": "https//lovemetwotimes.github.io/react-droplet-thumbnail",
+  "homepage": "https://lovemetwotimes.github.io/react-droplet-thumbnail",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
