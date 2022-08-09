@@ -101,7 +101,42 @@ function DropletsDemos() {
 }
 
 root.render(
-  <DropletsDemos/>
+  <div className="demo1">    
+    <DropletsDemos/>
+    <h1>Grid view demo</h1>
+    <div className="gridview">
+      <div>
+        <h2><span className="dot" style={{backgroundColor: "#FF9F9F"}}></span>lorem ipsum</h2>
+        <DropletThumbnail src="https://picsum.photos/id/1031/300" color="#F9D8DD" start="bottom-right" rotationangle="-90" />
+      </div>
+      
+      <div>
+        <h2><span className="dot" style={{backgroundColor: "#FCB937"}}></span>lorem ipsum</h2>
+        <DropletThumbnail src="https://picsum.photos/id/1024/300" color="#CDDEEE" rotationangle="-90"/>
+      </div>
+      
+      <div>
+        <h2><span className="dot" style={{backgroundColor: "#FB693C"}}></span>lorem ipsum</h2>
+        <DropletThumbnail src="https://picsum.photos/id/1023/300" color="#FB693C" start="bottom-right" rotationangle="90"/>
+      </div>
+
+      <div>
+        <h2><span className="dot" style={{backgroundColor: "#F9D8DD"}}></span>lorem ipsum</h2>
+        <DropletThumbnail src="https://picsum.photos/id/1021/300" color="#88B7E3" rotationangle="-90" />
+      </div>
+
+      <div>
+        <h2><span className="dot" style={{backgroundColor: "#1A76CB"}}></span>lorem ipsum</h2>
+        <DropletThumbnail src="https://picsum.photos/id/1020/300" color="#02E38C" start="top-right" rotationangle="-180"/>
+      </div>
+      
+
+      <div>
+        <h2><span className="dot" style={{backgroundColor: "#5072AE"}}></span>lorem ipsum</h2>
+        <DropletThumbnail src="https://picsum.photos/id/1011/300" color="#FCAE17" start="bottom-left" rotationangle="-90" />
+      </div>
+    </div>
+  </div>
 );
 
 

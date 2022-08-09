@@ -65,7 +65,7 @@ code {
     monospace;
 }
 
-#demo > * {
+.demo1 > * {
   margin: 16px;
   margin-bottom: 50px;
 
@@ -76,3 +76,57 @@ code {
 	
 }
 
+
+.gridview {
+	display: grid; 
+	grid-template-columns: 1fr 1fr 1fr; 
+	grid-template-rows: 1fr 1fr; 
+	gap: 70px 70px; 
+	grid-template-areas: 
+	  ". . ."
+	  ". . ."; 
+}
+
+
+@media all and (max-width: 660px) 
+{
+	.gridview {
+		display: grid; 
+		grid-template-columns: 1fr 1fr; 
+		grid-template-rows: 1fr 1fr 1fr; 
+		grid-template-areas: 
+		  ". ."
+		  ". ."
+		  ". ."; 
+	}	
+}
+
+@media all and (max-width: 440px) 
+{
+	.gridview {
+		display: grid; 
+		grid-template-columns: 1fr; 
+		grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr; 
+		grid-template-areas: 
+		"."
+		"."
+		"."  
+		"."
+		"."
+		"."; 
+	}
+}
+
+.gridview h2 {
+	margin-bottom: 16px;
+	text-transform: uppercase;
+	
+}
+
+.gridview .dot {
+	padding-left: 20px;
+	border-radius: 50%;
+	width: 40px;
+	height: 40px;
+	margin-right: 30px;
+}
