@@ -7,12 +7,13 @@ class DropletThumbnail extends Component {
         super();
         this.state = {
             isHovered: false,
+            isLoaded: false,
        }
     }
 
     render () {
         const {src, alt, className, start, maxwidth,  rotationangle, padding, color, keepimagesize, transitioninsteadrotation, transitionspeed, imagerotation, imagescale} = this.props
-        const {isHovered} = this.state
+        const {isHovered, isLoaded} = this.state
         const dropletStyle= {
             maxWidth: `${maxwidth}`,
             maxHeight: `${maxwidth}`,    
@@ -30,6 +31,7 @@ class DropletThumbnail extends Component {
         const dropletImageRotationStyle = {
             transform: isHovered ? `scale(${imagescale}) rotate(${imagerotation})` : '',
             transition: `all ${dropletRotationSpeed}s ease`,
+            opacity: isLoaded ? '1' : '0',
         }
 
         const dropletImageCoverStyle = {
@@ -62,7 +64,8 @@ class DropletThumbnail extends Component {
                     <img
                         style={dropletImageRotationStyle} 
                         className={`droplet-thumbnail-image`} 
-                        src={src} 
+                        src={src}
+                        onLoad={()=> this.setState({isLoaded: true})}
                         alt={alt}/>
                 </div> 
             </div>
