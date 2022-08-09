@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/react-droplet-thumbnail/static/css/main.eb107034.css",
-    "main.js": "/react-droplet-thumbnail/static/js/main.c1afd8f4.js",
+    "main.css": "/react-droplet-thumbnail/static/css/main.ac42a7ba.css",
+    "main.js": "/react-droplet-thumbnail/static/js/main.2d56e223.js",
     "index.html": "/react-droplet-thumbnail/index.html",
-    "main.eb107034.css.map": "/react-droplet-thumbnail/static/css/main.eb107034.css.map",
-    "main.c1afd8f4.js.map": "/react-droplet-thumbnail/static/js/main.c1afd8f4.js.map"
+    "main.ac42a7ba.css.map": "/react-droplet-thumbnail/static/css/main.ac42a7ba.css.map",
+    "main.2d56e223.js.map": "/react-droplet-thumbnail/static/js/main.2d56e223.js.map"
   },
   "entrypoints": [
-    "static/css/main.eb107034.css",
-    "static/js/main.c1afd8f4.js"
+    "static/css/main.ac42a7ba.css",
+    "static/js/main.2d56e223.js"
   ]
 }
