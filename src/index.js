@@ -102,7 +102,6 @@ function DropletsDemos() {
 
 root.render(
   <div className="demo1">    
-    <DropletsDemos/>
     <h1>Grid view demo</h1>
     <div className="gridview">
       <div>
@@ -136,6 +135,8 @@ root.render(
         <DropletThumbnail src="https://picsum.photos/id/1011/300" color="#FCAE17" start="bottom-left" rotationangle="-90" />
       </div>
     </div>
+    <h1>Different configuration demo</h1>
+    <DropletsDemos/>
   </div>
 );
 
